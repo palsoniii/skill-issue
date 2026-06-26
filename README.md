@@ -1,12 +1,12 @@
 <!-- Hero Poster -->
 
-![Skill Issue Poster](assets/poster.png)
+![Skill Issue Poster](assets/poster.jpg)
 
 # Skill Issue
 
 *"The game isn't unfair. You're just... experiencing a skill issue."*
 
-A rage platformer built in **Godot** for my college fest, inspired by **Level Devil**.
+A ragebait platformer built in **Godot** for my college fest, inspired by **Level Devil**.
 
 Platforms disappear, spikes have a personal vendetta, strawberries aren't as healthy as they look, and eventually even your keyboard starts gaslighting you.
 
@@ -18,14 +18,14 @@ If you beat it without saying *"That's BS!"*, congratulations—you might actual
 
 ### Platforms with Commitment Issues
 
-They'll support you... until they suddenly decide they won't.
+They'll support you, until they suddenly decide they won't.
 
 ### Spikes That Need Personal Space
 
 They don't wait for you to walk into them.
 They come to you.
 
-### Strawberries (Not FDA Approved)
+### Strawberries (Not FSSAI Approved)
 
 Perfect for fruit lovers.
 Slight downside: they explode.
@@ -36,8 +36,7 @@ A level dedicated to proving that your brain only knows directions when nobody i
 
 ### The Final Exam
 
-Everything you've suffered through...
-all at once.
+Let's see if you have skills.
 
 ---
 
@@ -82,12 +81,10 @@ Assets : https://pixelfrog-assets.itch.io/pixel-adventure-1
 * More creative ways to make players question their decisions
 * Better sound effects
 * Checkpoints (maybe...)
-* Steam release? 👀
 
 ---
 
 ## Bugs
 
 There aren't any.
-
 Those are features.
