@@ -65,6 +65,7 @@ Inspired by **Level Devil**, but every trap, level layout, timing, and surprise 
 
 The goal wasn't to copy the chaos—it was to create my own version of *"I definitely pressed jump."*
 
+Assets : https://pixelfrog-assets.itch.io/pixel-adventure-1
 ---
 
 ## Gameplay
