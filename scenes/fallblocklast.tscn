@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://co6ds4uupivc6"]
+
+[ext_resource type="Script" path="res://scripts/fallblock.gd" id="1_nq38y"]
+[ext_resource type="Texture2D" uid="uid://juuk8fv0x5tf" path="res://assets/Terrain/Terrain (16x16).png" id="2_dgvux"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kqn5i"]
+size = Vector2(64, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3p0mw"]
+size = Vector2(63.5, 64)
+
+[node name="Fallblock" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_nq38y")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(32, 0)
+texture = ExtResource("2_dgvux")
+region_enabled = true
+region_rect = Rect2(208, 80, 32, 32)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 32)
+texture = ExtResource("2_dgvux")
+region_enabled = true
+region_rect = Rect2(208, 80, 32, 32)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(32, 32)
+texture = ExtResource("2_dgvux")
+region_enabled = true
+region_rect = Rect2(208, 80, 32, 32)
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+texture = ExtResource("2_dgvux")
+region_enabled = true
+region_rect = Rect2(208, 80, 32, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_kqn5i")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(15.75, 16)
+shape = SubResource("RectangleShape2D_3p0mw")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

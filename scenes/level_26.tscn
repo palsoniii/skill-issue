@@ -1,0 +1,119 @@
+[gd_scene load_steps=6 format=3 uid="uid://ct8rs0ckwu0d0"]
+
+[ext_resource type="VideoStream" path="res://assets/Menu/Buttons/victory.ogv" id="1_l2edx"]
+[ext_resource type="Script" path="res://scripts/UI.gd" id="2_mi4yp"]
+[ext_resource type="Texture2D" uid="uid://b6j0tkqkoy1mw" path="res://assets/Other/Transition.png" id="3_mje2m"]
+[ext_resource type="Texture2D" uid="uid://bykjm65afcrxe" path="res://assets/Menu/Levels/50.png" id="4_ray61"]
+[ext_resource type="Texture2D" uid="uid://bld21qfpibxnd" path="res://assets/Menu/Buttons/Restart.png" id="5_r8uxg"]
+
+[node name="level_26" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+scale = Vector2(0.2, 0.2)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(5, 5)
+stream = ExtResource("1_l2edx")
+autoplay = true
+expand = true
+loop = true
+
+[node name="UI" type="CanvasLayer" parent="."]
+script = ExtResource("2_mi4yp")
+
+[node name="DeathText" type="Label" parent="UI"]
+visible = false
+custom_minimum_size = Vector2(2.08165e-12, 20)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -195.0
+offset_top = -27.5
+offset_right = 195.0
+offset_bottom = 27.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.560784, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "You have Skill Issues"
+
+[node name="Timer" type="Timer" parent="UI/DeathText"]
+wait_time = 2.0
+
+[node name="DamageFlash" type="ColorRect" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.04558, 1.00224)
+color = Color(1, 0, 0, 0)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI"]
+visible = false
+custom_minimum_size = Vector2(2.08165e-12, 20)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -34.9999
+offset_top = 26.0
+offset_right = 33.0001
+offset_bottom = 46.0
+grow_horizontal = 2
+scale = Vector2(1.88, 1.76)
+
+[node name="Dot1" type="TextureRect" parent="UI/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_mje2m")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Dot2" type="TextureRect" parent="UI/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_mje2m")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Dot3" type="TextureRect" parent="UI/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_mje2m")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Level" type="TextureRect" parent="UI"]
+offset_left = 1075.0
+offset_top = 17.0
+offset_right = 1130.0
+offset_bottom = 65.0
+texture = ExtResource("4_ray61")
+stretch_mode = 5
+
+[node name="RestartButton" type="TextureButton" parent="UI"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -18.0
+offset_top = -110.0
+offset_right = 22.0
+offset_bottom = -70.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(4, 4)
+texture_normal = ExtResource("5_r8uxg")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="UI/RestartButton" to="UI" method="_on_restart_button_pressed"]

@@ -1,0 +1,300 @@
+[gd_scene load_steps=6 format=3 uid="uid://cae4ebu0betsw"]
+
+[ext_resource type="Script" path="res://scripts/spikewave.gd" id="1_484uy"]
+[ext_resource type="Texture2D" uid="uid://co6gu421wv8ad" path="res://assets/Traps/Spikes/Idle.png" id="2_6dr7q"]
+[ext_resource type="Script" path="res://scripts/TriggerArea.gd" id="3_jyrxo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mbk6m"]
+radius = 18.1108
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4p2ig"]
+size = Vector2(31, 7.5)
+
+[node name="Spike_wave" type="Node2D"]
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_484uy")
+
+[node name="ActivationArea" type="Area2D" parent="."]
+position = Vector2(31.3333, -0.666667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ActivationArea"]
+position = Vector2(162, 90.6667)
+shape = SubResource("CircleShape2D_mbk6m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-32.6667, -16.6667)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-16.6667, -16.6667)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="TriggerArea" type="Area2D" parent="."]
+position = Vector2(-32.6667, -16.6667)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("3_jyrxo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TriggerArea"]
+position = Vector2(7.5, 0.25)
+shape = SubResource("RectangleShape2D_4p2ig")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(-1.33333, -16.6667)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(14.6667, -16.6667)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="TriggerArea2" type="Area2D" parent="."]
+position = Vector2(-1.33333, -16.6667)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("3_jyrxo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TriggerArea2"]
+position = Vector2(7.5, 0.25)
+shape = SubResource("RectangleShape2D_4p2ig")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(31.3333, 15.3333)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(47.3333, 15.3333)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="TriggerArea3" type="Area2D" parent="."]
+position = Vector2(31.3333, 15.3333)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("3_jyrxo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TriggerArea3"]
+position = Vector2(7.5, 0.25)
+shape = SubResource("RectangleShape2D_4p2ig")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(63.3333, 47.3333)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(79.3333, 47.3333)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="TriggerArea4" type="Area2D" parent="."]
+position = Vector2(63.3333, 47.3333)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("3_jyrxo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TriggerArea4"]
+position = Vector2(7.5, 0.25)
+shape = SubResource("RectangleShape2D_4p2ig")
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+position = Vector2(95.3333, 80)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="Sprite2D10" type="Sprite2D" parent="."]
+position = Vector2(111.333, 80)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="TriggerArea5" type="Area2D" parent="."]
+position = Vector2(95.3333, 80)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("3_jyrxo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TriggerArea5"]
+position = Vector2(7.5, 0.25)
+shape = SubResource("RectangleShape2D_4p2ig")
+
+[node name="Sprite2D11" type="Sprite2D" parent="."]
+position = Vector2(159.333, 111.333)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="Sprite2D12" type="Sprite2D" parent="."]
+position = Vector2(175.333, 111.333)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="TriggerArea6" type="Area2D" parent="."]
+position = Vector2(159.333, 111.333)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("3_jyrxo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TriggerArea6"]
+position = Vector2(7.5, 0.25)
+shape = SubResource("RectangleShape2D_4p2ig")
+
+[node name="Sprite2D13" type="Sprite2D" parent="."]
+position = Vector2(128, 111.333)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="Sprite2D14" type="Sprite2D" parent="."]
+position = Vector2(144, 111.333)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="TriggerArea7" type="Area2D" parent="."]
+position = Vector2(128, 111.333)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("3_jyrxo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TriggerArea7"]
+position = Vector2(7.5, 0.25)
+shape = SubResource("RectangleShape2D_4p2ig")
+
+[node name="Sprite2D15" type="Sprite2D" parent="."]
+position = Vector2(190.667, 111.333)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="Sprite2D16" type="Sprite2D" parent="."]
+position = Vector2(206.667, 111.333)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="TriggerArea8" type="Area2D" parent="."]
+position = Vector2(190.667, 111.333)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("3_jyrxo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TriggerArea8"]
+position = Vector2(7.5, 0.25)
+shape = SubResource("RectangleShape2D_4p2ig")
+
+[node name="Sprite2D17" type="Sprite2D" parent="."]
+position = Vector2(222.667, 80)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="Sprite2D18" type="Sprite2D" parent="."]
+position = Vector2(238.667, 80)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="TriggerArea9" type="Area2D" parent="."]
+position = Vector2(222.667, 80)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("3_jyrxo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TriggerArea9"]
+position = Vector2(7.5, 0.25)
+shape = SubResource("RectangleShape2D_4p2ig")
+
+[node name="Sprite2D19" type="Sprite2D" parent="."]
+position = Vector2(254.667, 47.3333)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="Sprite2D20" type="Sprite2D" parent="."]
+position = Vector2(270.667, 47.3333)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="TriggerArea10" type="Area2D" parent="."]
+position = Vector2(254.667, 47.3333)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("3_jyrxo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TriggerArea10"]
+position = Vector2(7.5, 0.25)
+shape = SubResource("RectangleShape2D_4p2ig")
+
+[node name="Sprite2D21" type="Sprite2D" parent="."]
+position = Vector2(287.333, 16)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="Sprite2D22" type="Sprite2D" parent="."]
+position = Vector2(303.333, 16)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="TriggerArea11" type="Area2D" parent="."]
+position = Vector2(287.333, 16)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("3_jyrxo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TriggerArea11"]
+position = Vector2(7.5, 0.25)
+shape = SubResource("RectangleShape2D_4p2ig")
+
+[node name="Sprite2D23" type="Sprite2D" parent="."]
+position = Vector2(319.333, -16.6667)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="Sprite2D24" type="Sprite2D" parent="."]
+position = Vector2(335.333, -16.6667)
+texture = ExtResource("2_6dr7q")
+region_enabled = true
+region_rect = Rect2(0, 8, 16, 8)
+
+[node name="TriggerArea12" type="Area2D" parent="."]
+position = Vector2(319.333, -16.6667)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("3_jyrxo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TriggerArea12"]
+position = Vector2(7.5, 0.25)
+shape = SubResource("RectangleShape2D_4p2ig")
+
+[connection signal="body_entered" from="ActivationArea" to="." method="_on_activation_area_body_entered"]
+[connection signal="body_entered" from="TriggerArea" to="TriggerArea" method="_on_body_entered"]
+[connection signal="body_entered" from="TriggerArea2" to="TriggerArea2" method="_on_body_entered"]
+[connection signal="body_entered" from="TriggerArea3" to="TriggerArea3" method="_on_body_entered"]
+[connection signal="body_entered" from="TriggerArea4" to="TriggerArea4" method="_on_body_entered"]
+[connection signal="body_entered" from="TriggerArea5" to="TriggerArea5" method="_on_body_entered"]
+[connection signal="body_entered" from="TriggerArea6" to="TriggerArea6" method="_on_body_entered"]
+[connection signal="body_entered" from="TriggerArea7" to="TriggerArea7" method="_on_body_entered"]
+[connection signal="body_entered" from="TriggerArea8" to="TriggerArea8" method="_on_body_entered"]
+[connection signal="body_entered" from="TriggerArea9" to="TriggerArea9" method="_on_body_entered"]
+[connection signal="body_entered" from="TriggerArea10" to="TriggerArea10" method="_on_body_entered"]
+[connection signal="body_entered" from="TriggerArea11" to="TriggerArea11" method="_on_body_entered"]
+[connection signal="body_entered" from="TriggerArea12" to="TriggerArea12" method="_on_body_entered"]

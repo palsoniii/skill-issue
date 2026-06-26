@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://ct3spi7skkga5"]
+
+[sub_resource type="GDScript" id="GDScript_60yxq"]
+script/source = "extends Node2D
+
+var deaths := 0
+
+func add_death():
+	deaths += 1
+	print(\"Deaths:\", deaths)
+
+func reset_deaths():
+	deaths = 0
+"
+
+[node name="DeathManager" type="Node2D"]
+script = SubResource("GDScript_60yxq")

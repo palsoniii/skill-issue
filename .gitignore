@@ -1,0 +1,16 @@
+# Imported assets
+.import/
+
+# Export presets (optional)
+.export/
+.export.cfg
+.export_presets.cfg
+
+# Editor/cache files
+.godot/
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
